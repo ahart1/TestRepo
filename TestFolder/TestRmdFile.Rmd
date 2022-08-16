@@ -1,0 +1,8 @@
+---
+title: "Here is an example RMarkdown"
+output: html_document
+date: "2022-08-16"
+---
+
+# This is an example RMarkdown
+Use this file to test README generation

@@ -1,4 +1,11 @@
 # This is an example R script to test README generation
+
+install.packages('devtools')
+library(devtools)
+devtools::install_github("ahart1/miscFunctions")
+library(miscFunctions)
+
+# Test README generation
 autoREADME(dirREADME = "TestRepo/AnotherFolder")
 
 # Add steps to set up R environment, load R packages, run my script

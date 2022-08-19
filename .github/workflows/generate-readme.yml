@@ -25,6 +25,7 @@ jobs:
       - name: Query dependencies
         run: |
           install.packages('devtools')
+          library(devtools)
           devtools::install_github("ahart1/miscFunctions")
           saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.Rds", version = 2)
           writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")

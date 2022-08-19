@@ -1,6 +1,8 @@
 # YAML file to auto generate and update README files
 
 name: auto-generate-readme
+runs-on: ubuntu-latest
+
 on:
   schedule:
     # auto generate each Monday at 8 AM

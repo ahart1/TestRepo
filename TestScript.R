@@ -1,5 +1,15 @@
 # This is an example R script to test README generation
 
+install.packages('usethis')
+library(usethis)
+install.packages("pkgdown")
+library(pkgdown)
+install.packages("rcmdcheck")
+library(rcmdcheck)
+install.packages("rversions")
+library(rversions)
+install.packages("urlchecker")
+library(urlchecker)
 install.packages('devtools')
 library(devtools)
 devtools::install_github("ahart1/miscFunctions")

@@ -43,7 +43,7 @@ jobs:
 
       - name: update_README
         run: |
-          source("TestRepo/TestScript.R")
+          source("TestScript.R")
         shell: Rscript {0}
 
       - name: Commit files

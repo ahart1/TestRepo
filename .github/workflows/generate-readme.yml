@@ -7,7 +7,7 @@ on:
     - cron: '0 8 * * 1'
 
   push:
-      branches: [ main ]
+      branches: [ master ]
       # Anytime this YAML file gets updated rerun the jobs, comment out if only want to run at 8am on Mondays (above "on:"")
 
 jobs:

@@ -1,0 +1,52 @@
+# YAML file to auto generate and update README files
+
+name: auto-generate-readme
+on:
+  schedule:
+    # auto generate each Monday at 8 AM
+    - cron: '0 8 * * 1'
+
+  push:
+      branches: [ main ]
+      # Anytime this YAML file gets updated rerun the jobs, comment out if only want to run at 8am on Mondays (above "on:"")
+
+jobs:
+  make-readme:
+    steps:
+      # Checkout current version of repo
+      - uses: actions/checkout@v2
+
+      - name: Query dependencies
+        run: |
+          devtools::install_github("ahart1/miscFunctions")
+          saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.Rds", version = 2)
+          writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")
+        shell: Rscript {0}
+
+      - name: Cache R packages
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-${{ hashFiles('.github/depends.Rds') }}
+          restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
+
+      - name: Install dependencies
+        run: |
+          remotes::install_deps(dependencies = TRUE)
+        shell: Rscript {0}
+
+      - name: update_README
+        run: |
+          source("TestRepo/TestScript.R")
+        shell: Rscript {0}
+
+      - name: Commit files
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add --all
+          git commit -am "add data"
+          git push
+
+
+

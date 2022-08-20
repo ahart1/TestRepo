@@ -14,6 +14,8 @@
 # library(devtools)
 # devtools::install_github("ahart1/miscFunctions")
 # library(miscFunctions)
+devtools::install_github("ahart1/miscFunctions")
+
 
 # Test README generation
 autoREADME(dirREADME = "TestRepo/AnotherFolder")

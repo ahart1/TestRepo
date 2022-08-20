@@ -24,13 +24,7 @@ jobs:
 
       - name: Query dependencies
         run: |
-          install.packages("usethis")
-          install.packages("pkgdown")
-          install.packages("rcmdcheck")
-          install.packages("rversions")
-          install.packages("urlchecker")
-          install.packages('devtools')
-          devtools::install_github("ahart1/miscFunctions")
+          install.packages('devtools', dependencies = TRUE)
           install.packages("remotes")
           saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.Rds", version = 2)
           writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")

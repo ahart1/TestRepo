@@ -3,8 +3,8 @@ This README already exists so this text should be retained. Only a file table ex
 
 
 
-
-
+### I am adding new subsections
+This was added after the last update but before a folder was added
 
 
 ### Second subtitle to test features
@@ -16,7 +16,14 @@ And more description for the subsection
 | ----------- | ----------- |
 | Testfile.R | ADD DESCRIPTION HERE |
 | TEXTFILE | ADD DESCRIPTION HERE |
+
+### Lots of new subsections
+Here is additional test text for subsection 3
+
 ### Folder title
 
 | Folder | Description |
 | ----------- | ----------- |
+
+### Does the final subsetion work?
+If so this should be the last text in the file.

@@ -3,6 +3,7 @@ This README already exists so this text should be retained. Only a file table ex
 
 
 
+
 ### I am adding new subsections
 This was added after the last update but before a folder was added
 
@@ -24,6 +25,7 @@ Here is additional test text for subsection 3
 
 | Folder | Description |
 | ----------- | ----------- |
-
+| WithANestedFolder | ADD DESCRIPTION HERE |
+ 
 ### Does the final subsetion work?
 If so this should be the last text in the file.

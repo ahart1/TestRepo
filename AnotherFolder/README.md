@@ -15,9 +15,11 @@ This README already exists so this text should be retained. Only a file table ex
 And more description for the subsection
 
 ### File title
+
 | File | Description |
 | Testfile.R | I've added a description for TestFile. |
 | TEXTFILE | ADD DESCRIPTION HERE |
 
 ### Folder title
+
 | Folder | Description |

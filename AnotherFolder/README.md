@@ -17,6 +17,7 @@ And more description for the subsection
 ### File title
 
 | File | Description |
+| ----------- | ----------- |
 | Testfile.R | I've added a description for TestFile. |
 | TEXTFILE | ADD DESCRIPTION HERE |
 

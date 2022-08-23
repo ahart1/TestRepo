@@ -12,7 +12,6 @@ This was added after the last update but before a folder was added
 And more description for the subsection
 
 ### File title
-
 | File | Description |
 | ----------- | ----------- |
 | Testfile.R | ADD DESCRIPTION HERE |
@@ -22,7 +21,6 @@ And more description for the subsection
 Here is additional test text for subsection 3
 
 ### Folder title
-
 | Folder | Description |
 | ----------- | ----------- |
 | WithANestedFolder | ADD DESCRIPTION HERE |

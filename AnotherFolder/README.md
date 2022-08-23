@@ -18,5 +18,6 @@ And more description for the subsection
 | File | Description |
 | Testfile.R | I've added a description for TestFile. |
 | TEXTFILE | ADD DESCRIPTION HERE |
+
 ### Folder title
 | Folder | Description |
